@@ -6,6 +6,11 @@ test_that("errors if not a data frame", {
 })
 
 test_that("errors if `id` contains invalid data", {
+  msg <- "Names must include the elements \\{'id'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$id <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'character'"
 
   data <- fake_masterdata_debt_datastore(id = 8)
@@ -31,6 +36,11 @@ test_that("errors if `id` contains invalid data", {
 })
 
 test_that("errors if `id_name` contains invalid data", {
+  msg <- "Names must include the elements \\{'id_name'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$id_name <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'character'"
 
   data <- fake_masterdata_debt_datastore(id_name = 8)
@@ -45,6 +55,11 @@ test_that("errors if `id_name` contains invalid data", {
 })
 
 test_that("errors if `ald_sector` contains invalid data", {
+  msg <- "Names must include the elements.*\\{'ald_sector'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$ald_sector <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'character'"
 
   data <- fake_masterdata_debt_datastore(ald_sector = 8)
@@ -67,6 +82,11 @@ test_that("errors if `ald_sector` contains invalid data", {
 })
 
 test_that("errors if `ald_location` contains invalid data", {
+  msg <- "Names must include the elements.*\\{'ald_location'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$ald_location <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'character'"
 
   data <- fake_masterdata_debt_datastore(ald_location = 8)
@@ -88,6 +108,11 @@ test_that("errors if `ald_location` contains invalid data", {
 })
 
 test_that("errors if `technology` contains invalid data", {
+  msg <- "Names must include the elements.*\\{'technology'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$technology <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'character'"
 
   data <- fake_masterdata_debt_datastore(technology = 8)
@@ -110,6 +135,11 @@ test_that("errors if `technology` contains invalid data", {
 })
 
 test_that("errors if `year` contains invalid data", {
+  msg <- "Names must include the elements.*\\{'year'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$year <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'integerish'"
 
   data <- fake_masterdata_debt_datastore(year = "2021")
@@ -139,6 +169,11 @@ test_that("errors if `year` contains invalid data", {
 })
 
 test_that("errors if `ald_production` contains invalid data", {
+  msg <- "Names must include the elements.*\\{'ald_production'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$ald_production <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'numeric'"
 
   data <- fake_masterdata_debt_datastore(ald_production = "222")
@@ -157,6 +192,11 @@ test_that("errors if `ald_production` contains invalid data", {
 })
 
 test_that("errors if `ald_production_unit` contains invalid data", {
+  msg <- "Names must include the elements.*\\{'ald_production_unit'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$ald_production_unit <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'character'"
 
   data <- fake_masterdata_debt_datastore(ald_production_unit = 1)
@@ -179,6 +219,11 @@ test_that("errors if `ald_production_unit` contains invalid data", {
 })
 
 test_that("errors if `ald_emissions_factor` contains invalid data", {
+  msg <- "Names must include the elements.*\\{'ald_emissions_factor'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$ald_emissions_factor <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'numeric'"
 
   data <- fake_masterdata_debt_datastore(ald_emissions_factor = "2")
@@ -193,6 +238,11 @@ test_that("errors if `ald_emissions_factor` contains invalid data", {
 })
 
 test_that("errors if `ald_emissions_factor_unit` contains invalid data", {
+  msg <- "Names must include the elements.*\\{'ald_emissions_factor_unit'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$ald_emissions_factor_unit <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type.*'character'"
 
   data <- fake_masterdata_debt_datastore(ald_emissions_factor_unit = 1)
@@ -211,6 +261,11 @@ test_that("errors if `ald_emissions_factor_unit` contains invalid data", {
 })
 
 test_that("errors if `country_of_domicile` contains invalid data", {
+  msg <- "Names must include the elements.*\\{'country_of_domicile'\\}"
+  data <- fake_masterdata_debt_datastore()
+  data$country_of_domicile <- NULL
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
   msg <- "Must be of type 'character'"
 
   data <- fake_masterdata_debt_datastore(country_of_domicile = 8)
