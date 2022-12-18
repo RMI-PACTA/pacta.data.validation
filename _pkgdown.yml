@@ -1,0 +1,3 @@
+url: https://rmi-pacta.github.io/pacta.data.validation
+template:
+  package: pacta.pkgdown.template
