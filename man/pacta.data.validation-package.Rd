@@ -6,6 +6,8 @@
 \alias{pacta.data.validation-package}
 \title{pacta.data.validation: pacta.data.validation}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 For more information visit \url{https://rmi.org/}.
 }
 \seealso{

@@ -1,3 +1,15 @@
+#' Validate a `masterdata_debt_datastore` object
+#'
+#' This function validates that an object is a valid `masterdata_debt_datastore`
+#' dataset.
+#'
+#' @param data An object (typically a data frame)
+#'
+#' @return `TRUE` if the object is valid, otherwise an error with a message
+#'   explaining the failed assertions
+#'
+#' @export
+
 validate_masterdata_debt_datastore <-
   function(data) {
     coll <- checkmate::makeAssertCollection()
