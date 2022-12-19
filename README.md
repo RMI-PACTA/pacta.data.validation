@@ -11,6 +11,13 @@ The `pacta.data.validation` R package provides a number of utility functions to 
 
 ## Installation
 
+You can install the most recent version of pacta.data.validation from
+[R-universe](https://r-universe.dev/) with:
+
+``` r
+install.packages("pacta.data.validation", repos = "https://rmi-pacta.r-universe.dev")
+```
+
 You can install the development version of pacta.data.validation from
 [GitHub](https://github.com/) with:
 
