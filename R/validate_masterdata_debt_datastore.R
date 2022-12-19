@@ -101,6 +101,11 @@ validate_masterdata_debt_datastore <-
         checkmate::assert_character(data[[col_name]], add = coll, .var.name = paste0("data$", col_name))
         assert_valid_iso2c(data[[col_name]], allow.missing = TRUE, add = coll, .var.name = paste0("data$", col_name))
       }
+
+      # valid `technology` for `ald_sector`
+      if (all(c("technology", "ald_sector") %in% names(data))) {
+        assert_valid_technology_for_sector(data$technology, data$ald_sector, add = coll)
+      }
     }
 
     checkmate::reportAssertions(coll)
