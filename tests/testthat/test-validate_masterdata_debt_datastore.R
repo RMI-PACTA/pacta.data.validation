@@ -285,3 +285,34 @@ test_that("errors if `country_of_domicile` contains invalid data", {
   data <- fake_masterdata_debt_datastore(country_of_domicile = "")
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
 })
+
+test_that("errors if `technology` contains invalid data for a given `ald_sector`", {
+  msg <- "must contain only valid technology names.*for"
+
+  data <- fake_masterdata_debt_datastore(ald_sector = "Automotive", technology = "Freight")
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
+  data <- fake_masterdata_debt_datastore(ald_sector = "Aviation", technology = "Electric")
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
+  data <- fake_masterdata_debt_datastore(ald_sector = "Cement", technology = "Freight")
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
+  data <- fake_masterdata_debt_datastore(ald_sector = "Coal", technology = "Freight")
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
+  data <- fake_masterdata_debt_datastore(ald_sector = "HDV", technology = "Freight")
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
+  data <- fake_masterdata_debt_datastore(ald_sector = "Oil&Gas", technology = "Freight")
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
+  data <- fake_masterdata_debt_datastore(ald_sector = "Power", technology = "Freight")
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
+  data <- fake_masterdata_debt_datastore(ald_sector = "Shipping", technology = "Electric")
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+
+  data <- fake_masterdata_debt_datastore(ald_sector = "Steel", technology = "Freight")
+  expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
+})
