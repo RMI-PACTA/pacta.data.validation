@@ -33,7 +33,8 @@ Depends:
 Imports: 
     checkmate,
     countrycode,
-    dplyr
+    dplyr,
+    stringi
 Suggests: 
     devtools,
     pkgdown,
