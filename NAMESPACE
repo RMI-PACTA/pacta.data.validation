@@ -3,6 +3,7 @@
 export(fake_currencies)
 export(fake_masterdata_debt_datastore)
 export(fake_masterdata_ownership_datastore)
+export(is_valid_isin)
 export(validate_currencies)
 export(validate_masterdata_debt_datastore)
 export(validate_masterdata_ownership_datastore)
