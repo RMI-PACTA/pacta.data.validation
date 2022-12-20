@@ -8,7 +8,7 @@ assert_regex <-
       msg <- paste0("all values must match regex `", regex, "`, but has additional values %s")
     }
 
-    matches <- match_regex(x = x, regex = regex)
+    matches <- matches_regex(x = x, regex = regex)
 
     if (any.missing) { matches[is.na(x)] <- TRUE }
 

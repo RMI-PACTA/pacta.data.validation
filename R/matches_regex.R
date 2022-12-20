@@ -1,4 +1,4 @@
-match_regex <-
+matches_regex <-
   function(x, regex) {
     x <- simplify_if_one_col_df(x)
 
