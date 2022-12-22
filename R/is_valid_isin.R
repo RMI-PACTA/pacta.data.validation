@@ -12,9 +12,7 @@
 #' @export
 
 is_valid_isin <- function(isins) {
-  if (is.data.frame(isins) && identical(length(isins), 1L)) {
-    isins <- isins[[1L]]
-  }
+  isins <- simplify_if_one_col_df(isins)
 
   isins[is.na(isins)] <- "X" # set NAs to something sure to return FALSE
   isins_factored <- as.factor(isins)
