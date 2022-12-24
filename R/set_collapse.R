@@ -1,7 +1,11 @@
 set_collapse <-
   function(x) {
-    nas <- is.na(x)
-    has_na <- any(nas)
-    x <- sort(unique(x))
-    paste0(ifelse(has_na, "`<NA>`, ", ""), '"', paste0(x, collapse = '", "'), '"')
+    na_msg <- NULL
+    if (any(is.na(x))) { na_msg <- "`<NA>`" }
+
+    str_msg <- NULL
+    x <- sort(unique(x), na.last = NA)
+    if (length(x) > 0) { str_msg <- paste0('"', x, '"') }
+
+    paste0(c(na_msg, str_msg), collapse = ", ")
   }
