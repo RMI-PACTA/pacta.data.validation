@@ -1,5 +1,5 @@
 assert_valid_sector <-
-  function(x, allow.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
+  function(x, any.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
     allowed_strings <-
       c(
         "Automotive",
@@ -19,7 +19,7 @@ assert_valid_sector <-
       x = x,
       choices = allowed_strings,
       msg = msg,
-      allow.missing = allow.missing,
+      any.missing = any.missing,
       .var.name = .var.name,
       add = add
     )
