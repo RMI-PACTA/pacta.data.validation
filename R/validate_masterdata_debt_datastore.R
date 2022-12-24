@@ -46,7 +46,7 @@ validate_masterdata_debt_datastore <-
       checkmate::assert_names(names(data), must.include = col_name, add = coll)
       if (checkmate::test_names(names(data), must.include = col_name)) {
         checkmate::assert_character(data[[col_name]], add = coll, .var.name = paste0("data$", col_name))
-        assert_valid_iso2c(data[[col_name]], allow.missing = TRUE, add = coll, .var.name = paste0("data$", col_name))
+        assert_valid_iso2c(data[[col_name]], any.missing = TRUE, add = coll, .var.name = paste0("data$", col_name))
       }
 
       # `technology` column
@@ -91,7 +91,7 @@ validate_masterdata_debt_datastore <-
       checkmate::assert_names(names(data), must.include = col_name, add = coll)
       if (checkmate::test_names(names(data), must.include = col_name)) {
         checkmate::assert_character(data[[col_name]], min.chars = 1L, add = coll, .var.name = paste0("data$", col_name))
-        assert_valid_emissions_factor_unit(data[[col_name]], allow.missing = TRUE, add = coll, .var.name = paste0("data$", col_name))
+        assert_valid_emissions_factor_unit(data[[col_name]], any.missing = TRUE, add = coll, .var.name = paste0("data$", col_name))
       }
 
       # `country_of_domicile` column
@@ -99,7 +99,7 @@ validate_masterdata_debt_datastore <-
       checkmate::assert_names(names(data), must.include = col_name, add = coll)
       if (checkmate::test_names(names(data), must.include = col_name)) {
         checkmate::assert_character(data[[col_name]], add = coll, .var.name = paste0("data$", col_name))
-        assert_valid_iso2c(data[[col_name]], allow.missing = TRUE, add = coll, .var.name = paste0("data$", col_name))
+        assert_valid_iso2c(data[[col_name]], any.missing = TRUE, add = coll, .var.name = paste0("data$", col_name))
       }
 
       # valid `technology` for `ald_sector`

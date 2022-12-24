@@ -1,5 +1,5 @@
 assert_valid_iso2c <-
-  function(x, allow.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
+  function(x, any.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
     allowed_strings <-
       c(
         sort(unique(countrycode::codelist$iso2c)),
@@ -12,7 +12,7 @@ assert_valid_iso2c <-
       x = x,
       choices = allowed_strings,
       msg = msg,
-      allow.missing = allow.missing,
+      any.missing = any.missing,
       .var.name = .var.name,
       add = add
     )
