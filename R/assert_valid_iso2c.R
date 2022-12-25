@@ -6,7 +6,7 @@ assert_valid_iso2c <-
         "XK"
       )
 
-    msg <- 'must contain only valid iso2c country codes or "XK" (for Kosovo), but has additional elements %s'
+    msg <- 'must contain only valid iso2c country codes or "XK" (for Kosovo), but has additional element{?s} {.val {misses}}'
 
     assert_subset(
       x = x,

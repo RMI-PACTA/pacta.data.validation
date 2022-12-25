@@ -13,7 +13,7 @@ assert_valid_production_unit <-
         "vehicles produced"
       )
 
-    msg <- "must contain only valid production units, but has additional elements %s"
+    msg <- "must contain only valid production units, but has additional element{?s} {.val {misses}}"
 
     assert_subset(
       x = x,

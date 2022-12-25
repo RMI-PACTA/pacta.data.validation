@@ -3,7 +3,7 @@ assert_valid_isin <-
     .var.name <- .var.name # force evaluation before x is changed
     x <- simplify_if_one_col_df(x)
 
-    msg <- "must contain only valid ISINs, but has additional elements %s"
+    msg <- "must contain only valid ISINs, but has additional element{?s} {.val {misses}}"
 
     results <- is_valid_isin(x)
 
@@ -11,10 +11,8 @@ assert_valid_isin <-
 
     res <-
       if (any(!results)) {
-        sprintf(
-          msg,
-          set_collapse(x[!results])
-        )
+        misses <- as.character(x[!results])
+        cli::format_inline(msg)
       } else {
         TRUE
       }
