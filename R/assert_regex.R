@@ -5,7 +5,7 @@ assert_regex <-
     x <- simplify_if_one_col_df(x)
 
     if (missing(msg)) {
-      msg <- paste0("all values must match regex `", regex, "`, but has additional values %s")
+      msg <- "all values must match regex {.code {regex}}, but has additional value{?s} {.val {x[!matches]}}"
     }
 
     matches <- matches_regex(x = x, regex = regex)
@@ -14,10 +14,7 @@ assert_regex <-
 
     res <-
       if (any(!matches)) {
-        sprintf(
-          msg,
-          set_collapse(x[!matches])
-        )
+        cli::format_inline(msg)
       } else {
         TRUE
       }
