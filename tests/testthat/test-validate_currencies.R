@@ -6,7 +6,7 @@ test_that("errors if not a data frame", {
 })
 
 test_that("errors if `currency` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'currency'\\}"
+  msg <- 'column "currency" must exist'
   data <- fake_currencies()
   data$currency <- NULL
   expect_error(validate_currencies(data), regexp = msg)
@@ -36,7 +36,7 @@ test_that("errors if `currency` contains invalid data", {
 })
 
 test_that("errors if `exchange_rate` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'exchange_rate'\\}"
+  msg <- 'column "exchange_rate" must exist'
   data <- fake_currencies()
   data$exchange_rate <- NULL
   expect_error(validate_currencies(data), regexp = msg)

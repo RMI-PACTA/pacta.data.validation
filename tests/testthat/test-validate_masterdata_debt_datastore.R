@@ -6,7 +6,7 @@ test_that("errors if not a data frame", {
 })
 
 test_that("errors if `id` contains invalid data", {
-  msg <- "Names must include the elements \\{'id'\\}"
+  msg <- 'column "id" must exist'
   data <- fake_masterdata_debt_datastore()
   data$id <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -36,7 +36,7 @@ test_that("errors if `id` contains invalid data", {
 })
 
 test_that("errors if `id_name` contains invalid data", {
-  msg <- "Names must include the elements \\{'id_name'\\}"
+  msg <- 'column "id_name" must exist'
   data <- fake_masterdata_debt_datastore()
   data$id_name <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -55,7 +55,7 @@ test_that("errors if `id_name` contains invalid data", {
 })
 
 test_that("errors if `ald_sector` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'ald_sector'\\}"
+  msg <- 'column "ald_sector" must exist'
   data <- fake_masterdata_debt_datastore()
   data$ald_sector <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -82,7 +82,7 @@ test_that("errors if `ald_sector` contains invalid data", {
 })
 
 test_that("errors if `ald_location` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'ald_location'\\}"
+  msg <- 'column "ald_location" must exist'
   data <- fake_masterdata_debt_datastore()
   data$ald_location <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -108,7 +108,7 @@ test_that("errors if `ald_location` contains invalid data", {
 })
 
 test_that("errors if `technology` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'technology'\\}"
+  msg <- 'column "technology" must exist'
   data <- fake_masterdata_debt_datastore()
   data$technology <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -135,7 +135,7 @@ test_that("errors if `technology` contains invalid data", {
 })
 
 test_that("errors if `year` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'year'\\}"
+  msg <- 'column "year" must exist'
   data <- fake_masterdata_debt_datastore()
   data$year <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -169,7 +169,7 @@ test_that("errors if `year` contains invalid data", {
 })
 
 test_that("errors if `ald_production` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'ald_production'\\}"
+  msg <- 'column "ald_production" must exist'
   data <- fake_masterdata_debt_datastore()
   data$ald_production <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -192,7 +192,7 @@ test_that("errors if `ald_production` contains invalid data", {
 })
 
 test_that("errors if `ald_production_unit` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'ald_production_unit'\\}"
+  msg <- 'column "ald_production_unit" must exist'
   data <- fake_masterdata_debt_datastore()
   data$ald_production_unit <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -219,7 +219,7 @@ test_that("errors if `ald_production_unit` contains invalid data", {
 })
 
 test_that("errors if `ald_emissions_factor` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'ald_emissions_factor'\\}"
+  msg <- 'column "ald_emissions_factor" must exist'
   data <- fake_masterdata_debt_datastore()
   data$ald_emissions_factor <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -238,7 +238,7 @@ test_that("errors if `ald_emissions_factor` contains invalid data", {
 })
 
 test_that("errors if `ald_emissions_factor_unit` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'ald_emissions_factor_unit'\\}"
+  msg <- 'column "ald_emissions_factor_unit" must exist'
   data <- fake_masterdata_debt_datastore()
   data$ald_emissions_factor_unit <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
@@ -261,7 +261,7 @@ test_that("errors if `ald_emissions_factor_unit` contains invalid data", {
 })
 
 test_that("errors if `country_of_domicile` contains invalid data", {
-  msg <- "Names must include the elements.*\\{'country_of_domicile'\\}"
+  msg <- 'column "country_of_domicile" must exist'
   data <- fake_masterdata_debt_datastore()
   data$country_of_domicile <- NULL
   expect_error(validate_masterdata_debt_datastore(data), regexp = msg)
