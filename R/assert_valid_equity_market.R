@@ -8,7 +8,7 @@ assert_valid_equity_market <-
         "USMarket"
       )
 
-    msg <- "must contain only valid equity market names, but has additional elements %s"
+    msg <- "must contain only valid equity market names, but has additional element{?s} {.val {misses}}"
 
     assert_subset(
       x = x,

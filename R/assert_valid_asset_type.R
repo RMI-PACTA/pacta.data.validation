@@ -8,7 +8,7 @@ assert_valid_asset_type <-
         "Others"
       )
 
-    msg <- "must contain only valid asset type names, but has additional elements %s"
+    msg <- "must contain only valid asset type names, but has additional element{?s} {.val {misses}}"
 
     assert_subset(
       x = x,

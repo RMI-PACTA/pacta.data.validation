@@ -8,7 +8,7 @@ assert_valid_scenario_geography <-
         "OECD"
       )
 
-    msg <- "must contain only valid scenario geography names, but has additional elements %s"
+    msg <- "must contain only valid scenario geography names, but has additional element{?s} {.val {misses}}"
 
     assert_subset(
       x = x,

@@ -13,7 +13,7 @@ assert_valid_sector <-
         "Steel"
       )
 
-    msg <- "must contain only valid sector names, but has additional elements %s"
+    msg <- "must contain only valid sector names, but has additional element{?s} {.val {misses}}"
 
     if (allow.other) { allowed_strings <- c(allowed_strings, "Other") }
 

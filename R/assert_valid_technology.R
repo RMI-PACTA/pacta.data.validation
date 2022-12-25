@@ -32,7 +32,7 @@ assert_valid_technology <-
         "RenewablesCap"
       )
 
-    msg <- "must contain only valid technology names, but has additional elements %s"
+    msg <- "must contain only valid technology names, but has additional element{?s} {.val {misses}}"
 
     assert_subset(
       x = x,
