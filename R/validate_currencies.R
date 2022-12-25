@@ -18,9 +18,10 @@ validate_currencies <-
     if (checkmate::test_data_frame(data)) {
       checkmate::assert_false(dplyr::is_grouped_df(data), add = coll)
 
+      assert_columns_exists(data, col_names = c("currency", "exchange_rate"), add = coll)
+
       # `currency` column
       col_name <- "currency"
-      checkmate::assert_names(names(data), must.include = col_name, add = coll)
       if (checkmate::test_names(names(data), must.include = col_name)) {
         checkmate::assert_character(data[[col_name]], any.missing = FALSE, add = coll, .var.name = paste0("data$", col_name))
         assert_valid_iso4217c(data[[col_name]], add = coll, .var.name = paste0("data$", col_name))
@@ -28,7 +29,6 @@ validate_currencies <-
 
       # `exchange_rate` column
       col_name <- "exchange_rate"
-      checkmate::assert_names(names(data), must.include = col_name, add = coll)
       if (checkmate::test_names(names(data), must.include = col_name)) {
         checkmate::assert_numeric(data[[col_name]], lower = 0, any.missing = FALSE, add = coll, .var.name = paste0("data$", col_name))
       }
