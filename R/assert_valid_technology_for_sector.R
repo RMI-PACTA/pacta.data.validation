@@ -1,5 +1,5 @@
 assert_valid_technology_for_sector <-
-  function(technologies, sectors, allow.missing = FALSE, .var.name = checkmate::vname(technologies), add = NULL) {
+  function(technologies, sectors, any.missing = FALSE, .var.name = checkmate::vname(technologies), add = NULL) {
     allowed_strings <-
       list(
         "Automotive" =
@@ -71,7 +71,7 @@ assert_valid_technology_for_sector <-
           x = technologies[idxs],
           choices = allowed_strings[[i]],
           msg = msg,
-          allow.missing = allow.missing,
+          any.missing = any.missing,
           .var.name = .var.name,
           add = add
         )

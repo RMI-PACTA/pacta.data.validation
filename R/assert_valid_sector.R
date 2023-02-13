@@ -1,5 +1,5 @@
 assert_valid_sector <-
-  function(x, allow.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
+  function(x, allow.other = FALSE, any.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
     allowed_strings <-
       c(
         "Automotive",
@@ -13,13 +13,15 @@ assert_valid_sector <-
         "Steel"
       )
 
-    msg <- "must contain only valid sector names, but has additional elements %s"
+    msg <- "must contain only valid sector names, but has additional element{?s} {.val {misses}}"
+
+    if (allow.other) { allowed_strings <- c(allowed_strings, "Other") }
 
     assert_subset(
       x = x,
       choices = allowed_strings,
       msg = msg,
-      allow.missing = allow.missing,
+      any.missing = any.missing,
       .var.name = .var.name,
       add = add
     )

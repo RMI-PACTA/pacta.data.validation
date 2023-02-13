@@ -1,5 +1,5 @@
 assert_valid_emissions_factor_unit <-
-  function(x, allow.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
+  function(x, any.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
     allowed_strings <-
       c(
         "tonnes of CO2 per DWT km",
@@ -13,13 +13,13 @@ assert_valid_emissions_factor_unit <-
         "tonnes of CO2 per tonnes of steel"
       )
 
-    msg <- "must contain only valid emissions factor units, but has additional elements %s"
+    msg <- "must contain only valid emissions factor units, but has additional element{?s} {.val {misses}}"
 
     assert_subset(
       x = x,
       choices = allowed_strings,
       msg = msg,
-      allow.missing = allow.missing,
+      any.missing = any.missing,
       .var.name = .var.name,
       add = add
     )

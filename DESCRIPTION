@@ -32,8 +32,10 @@ Depends:
     R (>= 3.5)
 Imports: 
     checkmate,
+    cli,
     countrycode,
-    dplyr
+    dplyr,
+    stringi
 Suggests: 
     devtools,
     pkgdown,

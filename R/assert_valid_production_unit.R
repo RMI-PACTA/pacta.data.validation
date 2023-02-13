@@ -1,5 +1,5 @@
 assert_valid_production_unit <-
-  function(x, allow.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
+  function(x, any.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
     allowed_strings <-
       c(
         "DWT km",
@@ -13,13 +13,13 @@ assert_valid_production_unit <-
         "vehicles produced"
       )
 
-    msg <- "must contain only valid production units, but has additional elements %s"
+    msg <- "must contain only valid production units, but has additional element{?s} {.val {misses}}"
 
     assert_subset(
       x = x,
       choices = allowed_strings,
       msg = msg,
-      allow.missing = allow.missing,
+      any.missing = any.missing,
       .var.name = .var.name,
       add = add
     )
