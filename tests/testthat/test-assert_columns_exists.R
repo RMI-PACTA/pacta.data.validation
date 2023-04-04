@@ -21,4 +21,3 @@ test_that("appropriate error when columns do not exist", {
   expect_error(assert_columns_exists(data, c("x", "y")), regexp = 'columns "x" and "y" must exist')
   expect_error(assert_columns_exists(data, c("x", "y", "z")), regexp = 'columns "x", "y", and "z" must exist')
 })
-

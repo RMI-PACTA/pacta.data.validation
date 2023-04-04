@@ -15,7 +15,9 @@ assert_valid_sector <-
 
     msg <- "must contain only valid sector names, but has additional element{?s} {.val {misses}}"
 
-    if (allow.other) { allowed_strings <- c(allowed_strings, "Other") }
+    if (allow.other) {
+      allowed_strings <- c(allowed_strings, "Other")
+    }
 
     assert_subset(
       x = x,

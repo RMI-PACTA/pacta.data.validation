@@ -7,7 +7,9 @@ assert_valid_isin <-
 
     results <- is_valid_isin(x)
 
-    if (any.missing) { results[is.na(x)] <- TRUE }
+    if (any.missing) {
+      results[is.na(x)] <- TRUE
+    }
 
     res <-
       if (any(!results)) {
