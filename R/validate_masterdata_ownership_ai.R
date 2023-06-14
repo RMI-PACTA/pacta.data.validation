@@ -102,7 +102,6 @@ validate_masterdata_ownership_datastore_ai <-
       # `emissions_factor` column
       col_name <- "emissions_factor"
       if (checkmate::test_names(names(data), must.include = col_name)) {
-        # TODO: confirm that no missing is allowed
         checkmate::assert_numeric(data[[col_name]], lower = 0, any.missing = FALSE, add = coll, .var.name = paste0("data$", col_name))
       }
 
@@ -110,7 +109,6 @@ validate_masterdata_ownership_datastore_ai <-
       col_name <- "emissions_factor_unit"
       if (checkmate::test_names(names(data), must.include = col_name)) {
         checkmate::assert_character(data[[col_name]], min.chars = 1L, add = coll, .var.name = paste0("data$", col_name))
-        # TODO: confirm that no missing is allowed
         assert_valid_emissions_factor_unit_ai(data[[col_name]], any.missing = FALSE, add = coll, .var.name = paste0("data$", col_name))
       }
 
@@ -141,10 +139,15 @@ validate_masterdata_ownership_datastore_ai <-
         checkmate::assert_character(data[[col_name]], pattern = "^20[1-3][0-9]Q[1-4]$", any.missing = FALSE, add = coll, .var.name = paste0("data$", col_name))
       }
 
-      # # valid `technology` for `ald_sector`
-      # if (all(c("technology", "ald_sector") %in% names(data))) {
-      #   assert_valid_technology_for_sector(data$technology, data$ald_sector, add = coll)
-      # }
+      # valid `technology` for `sector`
+      if (all(c("technology", "sector") %in% names(data))) {
+        assert_valid_technology_for_sector_ai(data$technology, data$sector, add = coll)
+      }
+
+      # valid `technology_type` for `technology`
+      if (all(c("technology_type", "technology") %in% names(data))) {
+        assert_valid_technology_type_for_technology_ai(data$technology_type, data$technology, add = coll)
+      }
     }
 
     checkmate::reportAssertions(coll)

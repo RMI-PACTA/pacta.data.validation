@@ -82,3 +82,98 @@ assert_valid_technology_for_sector <-
 
     invisible()
   }
+
+assert_valid_technology_for_sector_ai <-
+  function(technologies, sectors, any.missing = FALSE, .var.name = checkmate::vname(technologies), add = NULL) {
+    allowed_strings <-
+      list(
+        "Aviation" =
+          c(
+            "Freight",
+            "Passenger"
+          ),
+        "Cement" =
+          c(
+            "Integrated facility"
+          ),
+        "Coal" =
+          c(
+            "Anthracite Metallurgical",
+            "Anthracite Thermal",
+            "Bituminous Metallurgical",
+            "Bituminous Thermal",
+            "Lignite Thermal",
+            "Sub-Bituminous Thermal"
+          ),
+        "HDV" =
+          c(
+            "Electric",
+            "Fuel Cell",
+            "Hybrid No-Plug",
+            "ICE CNG",
+            "ICE Diesel",
+            "ICE Gasoline",
+            "ICE Hydrogen",
+            "ICE Propane"
+          ),
+        "LDV" =
+          c(
+            "Electric",
+            "Fuel Cell",
+            "Hybrid No-Plug",
+            "Hybrid Plug-In",
+            "ICE CNG",
+            "ICE Diesel",
+            "ICE E85+",
+            "ICE Gasoline",
+            "ICE Propane"
+          ),
+        "Oil&Gas" =
+          c(
+            "Gas",
+            "Natural Gas Liquids",
+            "Oil and Condensate"
+          ),
+        "Power" =
+          c(
+            "CoalCap",
+            "GasCap",
+            "HydroCap",
+            "NuclearCap",
+            "OilCap",
+            "RenewablesCap"
+          ),
+        "Shipping" =
+          c(
+            "Freight",
+            "Passenger"
+          ),
+        "Steel" =
+          c(
+            "Basic Oxygen Furnace",
+            "Electric Arc Furnace",
+            "Open Hearth Furnace"
+          )
+      )
+
+    vapply(
+      X = seq_along(allowed_strings),
+      FUN = function(i) {
+        idxs <- sectors == names(allowed_strings)[[i]]
+        msg <- paste0("must contain only valid technology names for ", names(allowed_strings)[[i]], ", but has additional elements %s")
+
+        assert_subset(
+          x = technologies[idxs],
+          choices = allowed_strings[[i]],
+          msg = msg,
+          any.missing = any.missing,
+          .var.name = .var.name,
+          add = add
+        )
+        names(allowed_strings)[[i]]
+      },
+      FUN.VALUE = character(1)
+    )
+
+    invisible()
+  }
