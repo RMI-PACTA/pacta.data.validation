@@ -10,7 +10,7 @@
 #'
 #' @export
 
-validate_masterdata_ownership_datastore_ai <-
+validate_masterdata_ownership_ai <-
   function(data) {
     coll <- checkmate::makeAssertCollection()
 
