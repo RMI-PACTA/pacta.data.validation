@@ -102,12 +102,12 @@ validate_intermediate_scenario_output <-
 
       # valid `indicator` for `sector`
       if (all(c("indicator", "sector") %in% names(data))) {
-        # assert_valid_indicator_for_sector(data$technology, data$sector, add = coll)
+        assert_valid_indicator_for_sector_scenario_prep(data$indicator, data$sector, add = coll)
       }
 
       # valid `value` range for `unit`
       if (all(c("value", "unit") %in% names(data))) {
-        # assert_valid_value_for_unit(data$technology_type, data$technology, add = coll)
+        # assert_valid_value_for_unit(data$value, data$unit, add = coll)
       }
     }
 
