@@ -1,5 +1,5 @@
 assert_valid_indicator_for_sector_scenario_prep <-
-  function(technologies, sectors, any.missing = FALSE, .var.name = checkmate::vname(technologies), add = NULL) {
+  function(indicators, sectors, any.missing = FALSE, .var.name = checkmate::vname(indicators), add = NULL) {
     allowed_strings <-
       list(
         "Automotive" =
@@ -51,7 +51,7 @@ assert_valid_indicator_for_sector_scenario_prep <-
         msg <- paste0("must contain only valid technology names for ", names(allowed_strings)[[i]], ", but has additional elements %s")
 
         assert_subset(
-          x = technologies[idxs],
+          x = indicators[idxs],
           choices = allowed_strings[[i]],
           msg = msg,
           any.missing = any.missing,
