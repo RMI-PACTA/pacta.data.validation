@@ -10,7 +10,6 @@ assert_valid_units <-
         "mb/d",
         "Mtce",
         "mtoe",
-        "t CO2/ t Steel",
         "tCO2/t Cement",
         "tCO2/t Steel"
       )
