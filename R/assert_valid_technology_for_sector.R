@@ -109,7 +109,7 @@ assert_valid_technology_for_sector_scenario_prep <-
         "HDV" =
           c(
             "Electric",
-            "Fuel Cell",
+            "FuelCell",
             "Hybrid",
             "ICE"
           ),
