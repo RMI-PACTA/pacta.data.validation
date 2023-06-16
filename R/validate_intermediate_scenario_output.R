@@ -105,9 +105,15 @@ validate_intermediate_scenario_output <-
         assert_valid_indicator_for_sector_scenario_prep(data$indicator, data$sector, add = coll)
       }
 
-      # valid `value` range for `unit`
-      if (all(c("value", "unit") %in% names(data))) {
-        # assert_valid_value_for_unit(data$value, data$unit, add = coll)
+      # TODO: standardize units to be used per sector
+      # # valid `units` for `sector`
+      # if (all(c("units", "sector") %in% names(data))) {
+      #   assert_valid_unit_for_sector_scenario_prep(data$units, data$sector, add = coll)
+      # }
+
+      # valid `value` range for `units` in `sectors`
+      if (all(c("value", "units", "sector") %in% names(data))) {
+        assert_valid_value_range_for_unit_scenario_prep(data$value, data$units, data$sector, add = coll)
       }
     }
 
