@@ -86,7 +86,7 @@ validate_intermediate_scenario_output <-
       # `year` column
       col_name <- "year"
       if (checkmate::test_names(names(data), must.include = col_name)) {
-        checkmate::assert_numeric(data[[col_name]], lower = 2000, upper = 2100, any.missing = FALSE, add = coll, .var.name = paste0("data$", col_name))
+        checkmate::assert_integerish(data[[col_name]], lower = 2000, upper = 2100, any.missing = FALSE, add = coll, .var.name = paste0("data$", col_name))
       }
 
       # `value` column
