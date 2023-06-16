@@ -1,6 +1,8 @@
 assert_valid_value_range_for_unit_scenario_prep <-
   function(values, units, sectors, any.missing = FALSE, .var.name = checkmate::vname(values), add = NULL) {
     # styler: off
+    # values set by using a somewhat higher value than the global maximum of
+    # scenarios we use
     value_ranges <- dplyr::tribble(
       ~sector,                 ~unit, ~max_value,
       "Automotive", "# (in million)",        100,
