@@ -219,28 +219,28 @@ test_that("errors if `value` contains invalid data", {
 test_that("errors if `technology` contains invalid data for a given `sector`", {
   msg <- "must contain only valid technology names.*for"
 
-  data <- fake_intermediate_scenario_data(sector = "Automotive", technology = "Freight")
+  data <- fake_intermediate_scenario_data(sector = "Automotive", technology = "Passenger")
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 
   data <- fake_intermediate_scenario_data(sector = "Aviation", technology = "Electric")
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 
-  data <- fake_intermediate_scenario_data(sector = "Cement", technology = "Freight")
+  data <- fake_intermediate_scenario_data(sector = "Cement", technology = "Passenger")
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 
-  data <- fake_intermediate_scenario_data(sector = "Coal", technology = "Freight")
+  data <- fake_intermediate_scenario_data(sector = "Coal", technology = "Passenger")
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 
-  data <- fake_intermediate_scenario_data(sector = "HDV", technology = "Freight")
+  data <- fake_intermediate_scenario_data(sector = "HDV", technology = "Passenger")
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 
-  data <- fake_intermediate_scenario_data(sector = "Oil&Gas", technology = "Freight")
+  data <- fake_intermediate_scenario_data(sector = "Oil&Gas", technology = "Passenger")
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 
-  data <- fake_intermediate_scenario_data(sector = "Power", technology = "Freight")
+  data <- fake_intermediate_scenario_data(sector = "Power", technology = "Passenger")
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 
-  data <- fake_intermediate_scenario_data(sector = "Steel", technology = "Freight")
+  data <- fake_intermediate_scenario_data(sector = "Steel", technology = "Passenger")
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 })
 
