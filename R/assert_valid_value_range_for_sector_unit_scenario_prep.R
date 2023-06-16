@@ -15,7 +15,7 @@ assert_valid_value_range_for_unit_scenario_prep <-
       "Oil&Gas",               "bcm",       6000,
       "Oil&Gas",              "mb/d",        100,
       "Oil&Gas",              "mtoe",       6000,
-      "Power",                  "GW",      50000,
+      "Power",                  "GW",     100000,
       "Steel",        "tCO2/t Steel",          2
     )
     # styler: no

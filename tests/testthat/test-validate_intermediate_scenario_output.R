@@ -310,7 +310,7 @@ test_that("errors if `value` contains invalid data for a given combination of `s
   data <- fake_intermediate_scenario_data(sector = "Oil&Gas", units = "mtoe", value = 10000)
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 
-  data <- fake_intermediate_scenario_data(sector = "Power", units = "GW", value = 1000000)
+  data <- fake_intermediate_scenario_data(sector = "Power", units = "GW", value = 200000)
   expect_error(validate_intermediate_scenario_output(data), regexp = msg)
 
   data <- fake_intermediate_scenario_data(sector = "Steel", units = "tCO2/t Steel", value = 5)
