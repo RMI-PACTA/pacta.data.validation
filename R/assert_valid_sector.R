@@ -30,7 +30,7 @@ assert_valid_sector <-
   }
 
 assert_valid_sector_scenario_prep <-
-  function(x, allow.other = FALSE, any.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
+  function(x, any.missing = FALSE, .var.name = checkmate::vname(x), add = NULL) {
     allowed_strings <-
       c(
         "Aviation",
@@ -41,15 +41,10 @@ assert_valid_sector_scenario_prep <-
         "LDV",
         "Oil&Gas",
         "Power",
-        "Shipping",
         "Steel"
       )
 
     msg <- "must contain only valid sector names, but has additional element{?s} {.val {misses}}"
-
-    if (allow.other) {
-      allowed_strings <- c(allowed_strings, "Other")
-    }
 
     assert_subset(
       x = x,
