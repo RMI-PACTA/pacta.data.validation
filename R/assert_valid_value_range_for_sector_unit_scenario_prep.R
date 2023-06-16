@@ -1,7 +1,7 @@
 assert_valid_value_range_for_unit_scenario_prep <-
   function(values, units, sectors, any.missing = FALSE, .var.name = checkmate::vname(values), add = NULL) {
     # styler: off
-    value_ranges <- tibble::tribble(
+    value_ranges <- dplyr::tribble(
       ~sector,                 ~unit, ~max_value,
       "Automotive", "# (in million)",        100,
       "Automotive",          "k*veh",     200000,

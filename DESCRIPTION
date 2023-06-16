@@ -35,8 +35,7 @@ Imports:
     cli,
     countrycode,
     dplyr,
-    stringi,
-    tibble
+    stringi
 Suggests: 
     devtools,
     pkgdown,
