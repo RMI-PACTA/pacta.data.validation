@@ -127,12 +127,6 @@ assert_valid_technology_for_sector_scenario_prep <-
             "OilCap",
             "RenewablesCap"
           ),
-        # TODO: remove SHIPPING for good?
-        # "Shipping" =
-        #   c(
-        #     "Freight",
-        #     "Passenger"
-        #   ),
         "Steel" =
           c(
             NA_character_

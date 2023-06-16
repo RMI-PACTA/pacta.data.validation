@@ -11,7 +11,7 @@ assert_valid_indicator <-
         "Supply"
       )
 
-    msg <- "must contain only valid technology names, but has additional element{?s} {.val {misses}}"
+    msg <- "must contain only valid indicator names, but has additional element{?s} {.val {misses}}"
 
     assert_subset(
       x = x,

@@ -33,11 +33,6 @@ assert_valid_indicator_for_sector_scenario_prep <-
             "Capacity",
             "Capacity: installed"
           ),
-        # TODO: remove SHIPPING for good?
-        # "Shipping" =
-        #   c(
-        #     "Emission Intensity"
-        #   ),
         "Steel" =
           c(
             "Emission Intensity"
@@ -48,7 +43,7 @@ assert_valid_indicator_for_sector_scenario_prep <-
       X = seq_along(allowed_strings),
       FUN = function(i) {
         idxs <- sectors == names(allowed_strings)[[i]]
-        msg <- paste0("must contain only valid technology names for ", names(allowed_strings)[[i]], ", but has additional elements %s")
+        msg <- paste0("must contain only valid indicator names for ", names(allowed_strings)[[i]], ", but has additional elements %s")
 
         assert_subset(
           x = indicators[idxs],

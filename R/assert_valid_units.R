@@ -14,7 +14,7 @@ assert_valid_units <-
         "tCO2/t Steel"
       )
 
-    msg <- "must contain only valid technology names, but has additional element{?s} {.val {misses}}"
+    msg <- "must contain only valid unit names, but has additional element{?s} {.val {misses}}"
 
     assert_subset(
       x = x,
