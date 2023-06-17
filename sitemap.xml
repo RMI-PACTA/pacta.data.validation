@@ -28,6 +28,9 @@
     <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_financial_data.html</loc>
   </url>
   <url>
+    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_intermediate_scenario_data.html</loc>
+  </url>
+  <url>
     <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_masterdata_debt_datastore.html</loc>
   </url>
   <url>
@@ -53,6 +56,9 @@
   </url>
   <url>
     <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_financial_data.html</loc>
+  </url>
+  <url>
+    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_intermediate_scenario_output.html</loc>
   </url>
   <url>
     <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_masterdata_debt_datastore.html</loc>
