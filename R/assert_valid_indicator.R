@@ -5,6 +5,7 @@ assert_valid_indicator <-
       c(
         "Capacity",
         "Capacity: installed",
+        "Demand",
         "Emission Intensity",
         "Production",
         "Sales",

@@ -16,6 +16,7 @@ assert_valid_indicator_for_sector_scenario_prep <-
           ),
         "Coal" =
           c(
+            "Demand",
             "Production",
             "Supply"
           ),
@@ -25,6 +26,7 @@ assert_valid_indicator_for_sector_scenario_prep <-
           ),
         "Oil&Gas" =
           c(
+            "Demand",
             "Production",
             "Supply"
           ),

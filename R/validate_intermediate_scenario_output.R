@@ -100,6 +100,7 @@ validate_intermediate_scenario_output <-
         assert_valid_technology_for_sector_scenario_prep(data$technology, data$sector, add = coll)
       }
 
+      # TODO: potentially needs to check the matching scenario to avoid unexpected passes
       # valid `indicator` for `sector`
       if (all(c("indicator", "sector") %in% names(data))) {
         assert_valid_indicator_for_sector_scenario_prep(data$indicator, data$sector, add = coll)
