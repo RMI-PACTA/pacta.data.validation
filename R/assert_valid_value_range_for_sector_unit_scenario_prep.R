@@ -18,7 +18,7 @@ assert_valid_value_range_for_unit_scenario_prep <-
       "Power",                  "GW",     100000,
       "Steel",        "tCO2/t Steel",          2
     )
-    # styler: no
+    # styler: on
 
     for (i in 1:nrow(value_ranges)) {
       sector_idx <- sectors == value_ranges$sector[[i]]
