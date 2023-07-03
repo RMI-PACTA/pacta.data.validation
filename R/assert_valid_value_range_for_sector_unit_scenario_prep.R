@@ -5,7 +5,7 @@ assert_valid_value_range_for_unit_scenario_prep <-
     # scenarios we use
     value_ranges <- dplyr::tribble(
       ~sector,                 ~unit, ~max_value,
-      "Automotive", "# (in million)",        100,
+      "Automotive", "# (in million)",        150,
       "Automotive",          "k*veh",     200000,
       "Aviation",         "gCO2/pkm",     0.0002,
       "Cement",      "tCO2/t Cement",          1,
@@ -18,7 +18,7 @@ assert_valid_value_range_for_unit_scenario_prep <-
       "Power",                  "GW",     100000,
       "Steel",        "tCO2/t Steel",          2
     )
-    # styler: no
+    # styler: on
 
     for (i in 1:nrow(value_ranges)) {
       sector_idx <- sectors == value_ranges$sector[[i]]
