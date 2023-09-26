@@ -16,12 +16,11 @@
 
 fake_financial_data <-
   function(
-    isin = "US3140KKGV04",
-    unit_share_price = 12.3,
-    current_shares_outstanding_all_classes = 333000,
-    asset_type = "Equity",
-    factset_entity_id = "000Y86-E"
-  ) {
+      isin = "US3140KKGV04",
+      unit_share_price = 12.3,
+      current_shares_outstanding_all_classes = 333000,
+      asset_type = "Equity",
+      factset_entity_id = "000Y86-E") {
     data.frame(
       isin = isin,
       unit_share_price = unit_share_price,

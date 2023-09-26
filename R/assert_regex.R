@@ -9,7 +9,9 @@ assert_regex <-
     }
 
     matches <- matches_regex(x = x, regex = regex)
-    if (any.missing) { matches[is.na(x)] <- TRUE }
+    if (any.missing) {
+      matches[is.na(x)] <- TRUE
+    }
 
     res <-
       if (any(!matches)) {
