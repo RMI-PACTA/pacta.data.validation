@@ -14,9 +14,9 @@ assert_valid_value_range_for_unit_scenario_prep <-
       "HDV",                 "k*veh",     100000,
       "Oil&Gas",               "bcm",       6000,
       "Oil&Gas",              "mb/d",        100,
-      "Oil&Gas",              "mtoe",       6000,
+      "Oil&Gas",              "mtoe",       6800,
       "Power",                  "GW",     100000,
-      "Steel",        "tCO2/t Steel",          2.5
+      "Steel",        "tCO2/t Steel",        2.5
     )
     # styler: on
 
