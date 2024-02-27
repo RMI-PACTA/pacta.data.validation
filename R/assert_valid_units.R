@@ -4,7 +4,7 @@ assert_valid_units <-
       c(
         "# (in million)",
         "bcm",
-        "gCO2/pkm",
+        "tCO2/pkm",
         "GW",
         "k*veh",
         "mb/d",
