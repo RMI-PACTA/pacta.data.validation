@@ -7,16 +7,16 @@ assert_valid_value_range_for_unit_scenario_prep <-
       ~sector,                 ~unit, ~max_value,
       "Automotive", "# (in million)",        150,
       "Automotive",          "k*veh",     200000,
-      "Aviation",         "gCO2/pkm",     0.0002,
+      "Aviation",         "tCO2/pkm",     0.0002,
       "Cement",      "tCO2/t Cement",          1,
       "Coal",                 "Mtce",      10000,
       "Coal",                 "mtoe",       6000,
       "HDV",                 "k*veh",     100000,
       "Oil&Gas",               "bcm",       6000,
       "Oil&Gas",              "mb/d",        100,
-      "Oil&Gas",              "mtoe",       6000,
+      "Oil&Gas",              "mtoe",       6800,
       "Power",                  "GW",     100000,
-      "Steel",        "tCO2/t Steel",          2
+      "Steel",        "tCO2/t Steel",        2.5
     )
     # styler: on
 

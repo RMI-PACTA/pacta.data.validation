@@ -42,6 +42,6 @@ Suggests:
     testthat (>= 3.0.0)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Config/testthat/edition: 3
-Config/Needs/website: rmi-pacta/pacta.pkgdown.template
+Config/Needs/website: rmi-pacta/pacta.pkgdown.rmitemplate
