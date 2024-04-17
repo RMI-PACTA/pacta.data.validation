@@ -3,14 +3,19 @@ assert_valid_production_unit <-
     allowed_strings <-
       c(
         "DWT km",
+        "dwt km",
         "GJ",
         "MW",
         "pkm",
         "tkm",
         "tonnes of cement",
+        "t cement",
         "tonnes of coal",
+        "t coal",
         "tonnes of steel",
-        "vehicles produced"
+        "t steel",
+        "vehicles produced",
+        "# vehicles"
       )
 
     msg <- "must contain only valid production units, but has additional element{?s} {.val {misses}}"
