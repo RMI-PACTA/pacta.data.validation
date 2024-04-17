@@ -31,6 +31,7 @@ assert_valid_technology_for_sector <-
             "ICE CNG_HDV",
             "ICE Diesel_HDV",
             "ICE Gasoline_HDV",
+            "ICE Hydrogen_HDV",
             "ICE Propane_HDV"
           ),
         "Oil&Gas" =
