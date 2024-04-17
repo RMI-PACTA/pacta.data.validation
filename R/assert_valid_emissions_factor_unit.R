@@ -19,7 +19,7 @@ assert_valid_emissions_factor_unit <-
         "tonnes of CO2 per tonnes of coal",
         "tCO2e/t coal",
         "tonnes of CO2 per tonnes of steel",
-        "tCO2e/t steel",
+        "tCO2e/t steel"
       )
 
     msg <- "must contain only valid emissions factor units, but has additional element{?s} {.val {misses}}"
