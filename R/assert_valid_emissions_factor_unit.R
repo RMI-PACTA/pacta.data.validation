@@ -18,7 +18,7 @@ assert_valid_emissions_factor_unit <-
         "tCO2e/t cement",
         "tonnes of CO2 per tonnes of coal",
         "tCO2e/t coal",
-        "tonnes of CO2 per tonnes of steel"
+        "tonnes of CO2 per tonnes of steel",
         "tCO2e/t steel",
       )
 
