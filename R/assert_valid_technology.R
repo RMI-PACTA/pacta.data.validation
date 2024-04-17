@@ -21,6 +21,7 @@ assert_valid_technology <-
         "ICE CNG_HDV",
         "ICE Diesel_HDV",
         "ICE Gasoline_HDV",
+        "ICE Hydrogen_HDV",
         "ICE Propane_HDV",
         "Integrated facility",
         "Natural Gas Liquids",
