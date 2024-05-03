@@ -2,8 +2,9 @@
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/pacta.data.validation)](https://CRAN.R-project.org/package=pacta.data.validation)
 [![R-CMD-check](https://github.com/RMI-PACTA/pacta.data.validation/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.data.validation/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/gh/RMI-PACTA/pacta.data.validation/graph/badge.svg)](https://codecov.io/gh/RMI-PACTA/pacta.data.validation)
+[![CRAN status](https://www.r-pkg.org/badges/version/pacta.data.validation)](https://CRAN.R-project.org/package=pacta.data.validation)
 [![pacta.data.validation status badge](https://rmi-pacta.r-universe.dev/badges/pacta.data.validation)](https://rmi-pacta.r-universe.dev/ui#package:pacta.data.validation)
 <!-- badges: end -->
 
