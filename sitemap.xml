@@ -1,69 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/404.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/index.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_abcd_flags_bonds.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_abcd_flags_equity.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_currencies.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_financial_data.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_intermediate_scenario_data.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_masterdata_debt_datastore.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_masterdata_ownership_datastore.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/is_valid_isin.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/pacta.data.validation-package.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_abcd_flags_bonds.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_abcd_flags_equity.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_currencies.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_financial_data.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_intermediate_scenario_output.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_masterdata_debt_datastore.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_masterdata_ownership_datastore.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/404.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/LICENSE-text.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/LICENSE.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/authors.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/index.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_abcd_flags_bonds.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_abcd_flags_equity.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_currencies.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_financial_data.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_intermediate_scenario_data.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_masterdata_debt_datastore.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/fake_masterdata_ownership_datastore.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/index.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/is_valid_isin.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/pacta.data.validation-package.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_abcd_flags_bonds.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_abcd_flags_equity.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_currencies.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_financial_data.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_intermediate_scenario_output.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_masterdata_debt_datastore.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.data.validation/reference/validate_masterdata_ownership_datastore.html</loc></url>
 </urlset>
+
