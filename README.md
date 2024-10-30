@@ -5,7 +5,7 @@
 [![R-CMD-check](https://github.com/RMI-PACTA/pacta.data.validation/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.data.validation/actions/workflows/R-CMD-check.yaml)
 [![codecov](https://img.shields.io/codecov/c/github/rmi-pacta/pacta.data.validation)](https://codecov.io/gh/RMI-PACTA/pacta.data.validation)
 [![CRAN status](https://www.r-pkg.org/badges/version/pacta.data.validation)](https://CRAN.R-project.org/package=pacta.data.validation)
-[![pacta.data.validation status badge](https://rmi-pacta.r-universe.dev/badges/pacta.data.validation)](https://rmi-pacta.r-universe.dev/ui#package:pacta.data.validation)
+[![pacta.data.validation status badge](https://rmi-pacta.r-universe.dev/badges/pacta.data.validation)](https://rmi-pacta.r-universe.dev/pacta.data.validation)
 <!-- badges: end -->
 
 The `pacta.data.validation` R package provides a number of utility functions to facilitate validation of data objects used in the PACTA ecosystem of R packages.
