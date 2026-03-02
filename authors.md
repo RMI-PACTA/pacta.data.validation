@@ -22,14 +22,14 @@
 Source:
 [`DESCRIPTION`](https://github.com/RMI-PACTA/pacta.data.validation/blob/main/DESCRIPTION)
 
-Yetman C, Hoffart J, Kastl J, Axthelm A (2025). *pacta.data.validation:
+Yetman C, Hoffart J, Kastl J, Axthelm A (2026). *pacta.data.validation:
 pacta.data.validation*. R package version 0.0.0.9000,
 <https://github.com/RMI-PACTA/pacta.data.validation>.
 
     @Manual{,
       title = {pacta.data.validation: pacta.data.validation},
       author = {CJ Yetman and Jackson Hoffart and Jacob Kastl and Alex Axthelm},
-      year = {2025},
+      year = {2026},
       note = {R package version 0.0.0.9000},
       url = {https://github.com/RMI-PACTA/pacta.data.validation},
     }
